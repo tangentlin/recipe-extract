@@ -4,3 +4,6 @@ log4mongo
 
 Unidecode==0.04.14
 pandas==0.17.1
+
+pdfminer.six
+pytesseract
