@@ -1,0 +1,7 @@
+version: '3'
+services:
+  webapi:
+    volumes:
+      - ./:/app
+    environment:
+      - MODE=dev

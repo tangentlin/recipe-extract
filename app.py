@@ -1,0 +1,51 @@
+import datetime
+import json
+import uuid
+
+from flask import Flask, json, Response
+from utils.logging import Logger
+
+app = Flask(__name__)
+app.config.from_pyfile('config.py')
+
+# Only call this once in the entire application
+Logger().setupLogger()
+
+
+@app.route('/')
+def site_default():
+    return """
+    <html>
+    <head>
+        <title>Recipe Extract API Service</title>
+        <style type="text/css">
+            html, body { font-family: sans-serif; font-size: 12px; }
+        </style>
+    </head>
+    <body>
+    <h2>Recipe Extract API Service</h2>
+    </body>
+    </html>
+    """
+
+
+def json_default(value):
+    if isinstance(value, datetime.date):
+        return value.isoformat()
+    else:
+        return value.__dict__
+
+
+def get_json_response(result):
+    return Response(json.dumps(result, default=json_default,
+                               sort_keys=True, indent=4), mimetype='application/json')
+
+
+if __name__ == '__main__':
+    Logger().getLogger().info('Slack Timeline Service Started')
+    app.run(host='0.0.0.0')
+    app.config.update(
+        SECRET_KEY = str(uuid.uuid4()),
+        PROPAGATE_EXCEPTIONS = True,
+        PRESERVE_CONTEXT_ON_EXCEPTION = True
+    )

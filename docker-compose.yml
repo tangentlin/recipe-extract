@@ -1,0 +1,12 @@
+version: '3'
+services:
+  webapi:
+    build: ./
+    ports:
+      - "5000:5000"
+    volumes:
+      - tempfilevolume:/tmp
+    environment:
+      - TEMP_FOLDER=/tmp
+volumes:
+  tempfilevolume: {}
