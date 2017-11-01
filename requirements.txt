@@ -2,5 +2,5 @@ Flask>=0.12
 pymongo>=2.8
 log4mongo
 
-Unidecode
-pandas
+Unidecode==0.04.14
+pandas==0.17.1

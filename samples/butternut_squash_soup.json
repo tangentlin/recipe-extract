@@ -1,0 +1,100 @@
+[
+    {
+        "input": "From http://allrecipes.com/recipe/12974/butternut-squash-soup/print/?recipeType=Recipe&servings=6&isMetric=false", 
+        "name": "From http://allrecipes.com/recipe/12974/butternut-squash-soup/print/?recipeType=Recipe&servings=6&isMetric=false", 
+        "display": "<span class='name'>From http://allrecipes.com/recipe/12974/butternut-squash-soup/print/?recipeType=Recipe&servings=6&isMetric=false</span>"
+    }, 
+    {
+        "input": "Ingredients", 
+        "name": "Ingredients", 
+        "display": "<span class='name'>Ingredients</span>"
+    }, 
+    {
+        "comment": "chopped", 
+        "name": "onion", 
+        "qty": "6", 
+        "input": "6 tablespoons chopped onion", 
+        "display": "<span class='qty'>6</span><span class='unit'>tablespoons</span><span class='comment'>chopped</span><span class='name'>onion</span>", 
+        "unit": "tablespoon"
+    }, 
+    {
+        "input": "4 tablespoons margarine", 
+        "display": "<span class='qty'>4</span><span class='unit'>tablespoons</span><span class='name'>margarine</span>", 
+        "name": "margarine", 
+        "unit": "tablespoon", 
+        "qty": "4"
+    }, 
+    {
+        "comment": "peeled and cubed", 
+        "name": "butternut squash", 
+        "qty": "6", 
+        "input": "6 cups peeled and cubed butternut squash", 
+        "display": "<span class='qty'>6</span><span class='unit'>cups</span><span class='comment'>peeled and cubed</span><span class='name'>butternut squash</span>", 
+        "unit": "cup"
+    }, 
+    {
+        "input": "3 cups water", 
+        "display": "<span class='qty'>3</span><span class='unit'>cups</span><span class='name'>water</span>", 
+        "name": "water", 
+        "unit": "cup", 
+        "qty": "3"
+    }, 
+    {
+        "comment": "cubes", 
+        "input": "4 cubes chicken bouillon", 
+        "display": "<span class='qty'>4</span><span class='comment'>cubes</span><span class='name'>chicken bouillon</span>", 
+        "name": "chicken bouillon", 
+        "qty": "4"
+    }, 
+    {
+        "comment": "dried", 
+        "name": "marjoram", 
+        "qty": "1/2", 
+        "input": "1/2 teaspoon dried marjoram", 
+        "display": "<span class='qty'>1/2</span><span class='unit'>teaspoon</span><span class='comment'>dried</span><span class='name'>marjoram</span>", 
+        "unit": "teaspoon"
+    }, 
+    {
+        "comment": "ground", 
+        "name": "black pepper", 
+        "qty": "1/4", 
+        "input": "1/4 teaspoon ground black pepper", 
+        "display": "<span class='qty'>1/4</span><span class='unit'>teaspoon</span><span class='comment'>ground</span><span class='name'>black pepper</span>", 
+        "unit": "teaspoon"
+    }, 
+    {
+        "comment": "ground", 
+        "name": "cayenne pepper", 
+        "other": "1/8", 
+        "input": "1/8 teaspoon ground cayenne pepper", 
+        "display": "<span class='other'>1/8</span><span class='unit'>teaspoon</span><span class='comment'>ground</span><span class='name'>cayenne pepper</span>", 
+        "unit": "teaspoon"
+    }, 
+    {
+        "comment": "8 ounce packages", 
+        "name": "cream cheese", 
+        "qty": "2", 
+        "other": "()", 
+        "input": "2 (8 ounce) packages cream cheese", 
+        "display": "<span class='qty'>2</span><span class='other'>(</span><span class='comment'>8 ounce</span><span class='other'>)</span><span class='comment'>packages</span><span class='name'>cream cheese</span>"
+    }, 
+    {
+        "input": "Directions", 
+        "name": "Directions", 
+        "display": "<span class='name'>Directions</span>"
+    }, 
+    {
+        "comment": ", saute onions in margarine until tender. Add squash water bouillon marjoram Bring to boil; cook 20 minutes until squash is tender.", 
+        "input": "In a large saucepan, saute onions in margarine until tender. Add squash, water, bouillon, marjoram, black pepper and cayenne pepper. Bring to boil; cook 20 minutes, or until squash is tender.", 
+        "other": ",, ,, black pepper and cayenne pepper., or", 
+        "name": "In a large saucepan", 
+        "display": "<span class='name'>In a large saucepan</span><span class='comment'>, saute onions in margarine until tender. Add squash</span><span class='other'>,</span><span class='comment'>water</span><span class='other'>,</span><span class='comment'>bouillon</span><span class='other'>,</span><span class='comment'>marjoram</span><span class='other'>, black pepper and cayenne pepper.</span><span class='comment'>Bring to boil; cook 20 minutes</span><span class='other'>, or</span><span class='comment'>until squash is tender.</span>"
+    }, 
+    {
+        "comment": "in a blender or food processor in batches until smooth. Return to saucepan heat through. Do not allow to boil.", 
+        "input": "Puree squash and cream cheese in a blender or food processor in batches until smooth. Return to saucepan, and heat through. Do not allow to boil.", 
+        "other": ", and", 
+        "name": "Puree squash and cream cheese", 
+        "display": "<span class='name'>Puree squash and cream cheese</span><span class='comment'>in a blender or food processor in batches until smooth. Return to saucepan</span><span class='other'>, and</span><span class='comment'>heat through. Do not allow to boil.</span>"
+    }
+]

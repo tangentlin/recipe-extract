@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:2.7.10
 
 # CRF++
 RUN DEBIAN_FRONTEND=noninteractive && apt-get update && \

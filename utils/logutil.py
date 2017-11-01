@@ -3,7 +3,7 @@ from log4mongo.handlers import MongoHandler
 from config import ApplicationConfig
 
 
-class Logger(object):
+class Logger:
     def __init__(self):
         self.name = 'recipe-extract-api-service'
 

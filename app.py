@@ -4,7 +4,7 @@ import uuid
 import os
 
 from flask import Flask, json, Response
-from utils.logging import Logger
+from utils.logutil import Logger
 from extractors.ingredient import IngredientExtractor
 
 app = Flask(__name__)
@@ -37,7 +37,7 @@ def extract():
     with open(file_path) as reader:
         content = reader.read()
     extractor = IngredientExtractor()
-    return extractor.extract_text(content)
+    return get_json_response(extractor.extract_text(content))
 
 
 def json_default(value):
