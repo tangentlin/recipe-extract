@@ -11,6 +11,8 @@ RUN DEBIAN_FRONTEND=noninteractive && apt-get update && \
 	make && \
 	make install
 
+RUN cp /usr/local/lib/libcrfpp.so.0 /usr/lib/
+
 EXPOSE 5000
 
 RUN mkdir /app

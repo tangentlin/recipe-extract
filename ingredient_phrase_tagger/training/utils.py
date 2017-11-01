@@ -1,7 +1,8 @@
+# The following code is adopted and modified from https://github.com/NYTimes/ingredient-phrase-tagger
+
 #!/usr/bin/env python
 import re
 import string
-
 
 def tokenize(s):
     """
@@ -21,6 +22,7 @@ def tokenize(s):
         s = s.replace(unit + 's/', unit + 's ')
 
     return filter(None, re.split(r'([,\(\)])?\s*', clumpFractions(s)))
+
 
 def joinLine(columns):
     return "\t".join(columns)
@@ -300,7 +302,7 @@ def export_data(lines):
         tokens = tokenize(line_clean)
 
         for i, token in enumerate(tokens):
-            features = getFeatures(token, i+1, tokens)
+            features = getFeatures(token, i+1, list(tokens))
             output.append(joinLine([token] + features))
         output.append('')
     return '\n'.join(output)

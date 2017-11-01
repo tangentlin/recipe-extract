@@ -1,9 +1,11 @@
 import datetime
 import json
 import uuid
+import os
 
 from flask import Flask, json, Response
 from utils.logging import Logger
+from extractors.ingredient import IngredientExtractor
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
@@ -29,6 +31,15 @@ def site_default():
     """
 
 
+@app.route('/extract')
+def extract():
+    file_path = os.path.join(os.path.dirname(__file__), "./samples/butternut_squash_soup.txt")
+    with open(file_path) as reader:
+        content = reader.read()
+    extractor = IngredientExtractor()
+    return extractor.extract_text(content)
+
+
 def json_default(value):
     if isinstance(value, datetime.date):
         return value.isoformat()
@@ -42,7 +53,7 @@ def get_json_response(result):
 
 
 if __name__ == '__main__':
-    Logger().getLogger().info('Slack Timeline Service Started')
+    Logger().getLogger().info('Recipe Extractor Service Started')
     app.run(host='0.0.0.0')
     app.config.update(
         SECRET_KEY = str(uuid.uuid4()),
